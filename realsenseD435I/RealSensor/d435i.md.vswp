@@ -1,0 +1,27 @@
+vnote_backup_file_826537664 /home/leon/Documents/vnote_notebooks/vnotebook/RealSensor/d435i.md
+# 1. 安装驱动
+## 1.1. apt-get 方式
+1. 注册公钥：
+```
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
+```
+2. 添加包仓库列表：
+Ubuntu 16 LTS：
+```
+sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo xenial main" -u
+```
+3. 安装库及开发包
+```
+sudo apt-get install librealsense2-dkms
+sudo apt-get install librealsense2-utils
+sudo apt-get install librealsense2-dev
+sudo apt-get install librealsense2-dbg
+```
+## 1.2. 源码方式
+1. 下载librealsense SDK
+2. 安装依赖库
+```
+1. sudo apt-get install git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev
+2. sudo apt-get install libglfw3-dev
+```
+3. 
